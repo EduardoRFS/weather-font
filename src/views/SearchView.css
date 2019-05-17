@@ -1,0 +1,6 @@
+.SearchView {
+  max-width: 100%;
+}
+.SearchView__item {
+  padding: 16px;
+}
