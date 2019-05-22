@@ -1,0 +1,14 @@
+.WeatherHeader--title {
+  all: unset;
+  display: block;
+  font-size: 32px;
+  font-weight: 500;
+  color: #474b5a;
+  padding: 8px;
+}
+.WeatherHeader--day {
+  all: unset;
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+}
