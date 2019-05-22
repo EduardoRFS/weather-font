@@ -1,3 +1,6 @@
+.WeatherHeader {
+  padding: 8px;
+}
 .WeatherHeader--title {
   all: unset;
   display: block;

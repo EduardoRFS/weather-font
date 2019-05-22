@@ -12,7 +12,6 @@ const WeatherHeader = ({ weather }) => (
       {`${weather.name}, ${weather.sys.country}`}
     </h2>
     <h5 className="WeatherHeader--day">{formatDate(weather.dt)}</h5>
-    <pre>{JSON.stringify(weather, null, 2)}</pre>
   </header>
 );
 
