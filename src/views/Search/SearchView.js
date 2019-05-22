@@ -3,11 +3,15 @@ import React from 'react';
 import SearchInput from './components/SearchInput';
 import SearchButton from './components/SearchButton';
 
-const SearchView = props => (
+const SearchView = ({ loading, value, setValue, onSubmit }) => (
   <div className="SearchView">
-    <form {...props}>
+    <form onSubmit={onSubmit}>
       <div className="SearchView__item">
-        <SearchInput />
+        <SearchInput
+          value={value}
+          onChange={ev => setValue(ev.target.value)}
+          locked={loading}
+        />
       </div>
       <div className="SearchView__item">
         <SearchButton />
