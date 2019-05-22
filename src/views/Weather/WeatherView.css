@@ -1,0 +1,12 @@
+.WeatherView {
+  padding-top: 8px;
+}
+.WeatherView--line {
+  display: block;
+  max-width: 640px;
+  width: 100%;
+  height: 2px;
+  background: #d8d8d8;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
