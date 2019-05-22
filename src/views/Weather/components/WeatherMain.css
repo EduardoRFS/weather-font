@@ -1,0 +1,61 @@
+.WeatherMain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #474b5a;
+}
+.WeatherMain--line {
+  display: none;
+}
+.WeatherMain--icon {
+  width: 320px;
+  height: 200px;
+  position: relative;
+}
+.WeatherMain--icon > img {
+  position: relative;
+  top: -60px;
+  width: 320px;
+  height: 320px;
+}
+.WeatherMain--temperature {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+.WeatherMain--description {
+  text-transform: capitalize;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.WeatherMain--side {
+  width: 160px;
+}
+.WeatherMain--sideLabel {
+  font-weight: 400;
+}
+.WeatherMain--sideTemperature {
+  font-weight: 500;
+  font-size: 32px;
+}
+@media screen and (max-width: 641px) {
+  .WeatherMain--now {
+    width: 100%;
+    order: -1;
+    padding-bottom: 24px;
+  }
+  .WeatherMain--line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #d8d8d8;
+  }
+  .WeatherMain--icon {
+    width: 100%;
+  }
+  .WeatherMain--side {
+    width: 50%;
+    padding-top: 24px;
+  }
+}
