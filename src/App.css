@@ -8,3 +8,19 @@
   width: 100vw;
   height: 100vh;
 }
+.App--back {
+  all: unset;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  top: 0;
+  left: 0;
+  color: black;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.App--back > svg {
+  width: 32px;
+  height: 32px;
+}
