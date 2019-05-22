@@ -4,3 +4,9 @@
 .SearchView__item {
   padding: 16px;
 }
+
+@media screen and (max-width: 1024px) {
+  .SearchView__item {
+    padding: 8px 16px;
+  }
+}

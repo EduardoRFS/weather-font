@@ -14,7 +14,7 @@ const SearchView = ({ loading, value, setValue, onSubmit }) => (
         />
       </div>
       <div className="SearchView__item">
-        <SearchButton />
+        <SearchButton loading={loading} />
       </div>
     </form>
   </div>

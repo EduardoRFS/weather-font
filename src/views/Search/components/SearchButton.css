@@ -10,4 +10,23 @@
   font-weight: bold;
 
   cursor: pointer;
+
+  transition: width 0.5s ease-out;
+}
+.SearchButton--loading {
+  width: 64px;
+}
+.SearchButton__loader {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+  margin: 0 auto;
+  opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in-out;
+}
+.SearchButton__loader--show {
+  opacity: 1;
+  display: block;
 }

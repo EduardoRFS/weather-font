@@ -1,8 +1,12 @@
 import './SearchInput.css';
 import React from 'react';
+import cl from 'classnames';
 
 const SearchInput = ({ locked, value, ...props }) => (
-  <div className={`SearchInput ${locked && 'SearchInput--locked'}`} {...props}>
+  <div
+    className={cl('SearchInput', { 'SearchInput--locked': locked })}
+    {...props}
+  >
     <label htmlFor="search-input" className="SearchInput_container">
       <input
         id="search-input"
