@@ -1,7 +1,7 @@
 import './WeatherMain.css';
 import React from 'react';
 
-const formatTemp = temp => `${parseInt(temp)} °C`;
+const formatTemp = temp => `${parseInt(temp, 10)} °C`;
 const WeatherMain = ({ weather }) => (
   <main className="WeatherMain">
     <div className="WeatherMain--line" />
