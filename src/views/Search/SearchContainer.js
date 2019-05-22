@@ -11,9 +11,10 @@ const SearchContainer = ({ go }) => {
 
   const { pending, result, start, started } = useAsyncTaskFetch(
     // TODO: also, this shouldn't be hard coded
-    `http://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}&q=${value}`
+    `http://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}&lang=pt&units=metric&q=${value}`
   );
   if (result) {
+    console.log(result);
     go(result);
   }
 
